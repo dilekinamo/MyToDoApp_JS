@@ -1,0 +1,51 @@
+body {
+  background-color: yellow;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.border-strong {
+  border: 2px solid black;
+}
+
+.color-black {
+  color: black;
+}
+
+.color-red {
+  color: red;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.minimum-height {
+  min-height: 50vh;
+}
+
+.form-head {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.createdLabel {
+  border: 2px solid black;
+  font-size: large;
+  color: white;
+  background-color: blue;
+}
+
+.border_bottom {
+  border-bottom: 2px solid black;
+}
+
+.createdLabel a {
+  color: white;
+}

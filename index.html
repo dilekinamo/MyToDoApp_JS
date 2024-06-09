@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-icons.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="my.css" />
+    <title>My ToDo App</title>
+  </head>
+  <body>
+    <h1 class="text-center fw-bolder mt-2">My ToDo App</h1>
+
+    <div class="container">
+      <div id="formToDo">
+        <div class="input-group">
+          <span class="input-group-text bg-yellow border-strong fw-bolder"
+            >Add New ToDo</span
+          >
+          <input
+            id="input"
+            type="text"
+            class="form-control border-strong"
+            placeholder="Add new Task here"
+          />
+          <button
+            class="btn btn-outline-secondary border-strong fw-bolder color-black"
+            type="button"
+            id="btn-submit"
+            onclick="addNewItem()"
+          >
+            Submit
+          </button>
+          <button
+            class="btn btn-outline-secondary border-strong fw-bolder color-black bg-red"
+            type="button"
+            id="btn-deleteAll"
+            onclick="deleteAllToDos()"
+          >
+            Delete All
+          </button>
+        </div>
+      </div>
+
+      <div class="container text-center mt-5">
+        <div class="row">
+          <div
+            class="col bg-white me-5 rounded-2 minimum-height border-strong ps-0 pe-0"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+            id="ToDo"
+          >
+            <div class="form-head border_bottom m-0 pt-2 pb-2" id="head-ToDo">
+              To Do
+            </div>
+            <div id="area_ToDo" name="area-ToDo"></div>
+          </div>
+          <div
+            class="col bg-white ms-3 me-3 rounded-2 border-strong ps-0 pe-0"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+            id="InProcess"
+          >
+            <div
+              class="form-head border_bottom m-0 pt-2 pb-2"
+              id="head-InProcess"
+            >
+              In Process
+            </div>
+            <div id="area_InProcess" name="area-InProcess"></div>
+          </div>
+          <div
+            class="col bg-white ms-5 rounded-2 border-strong ps-0 pe-0"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+            id="Completed"
+          >
+            <div
+              class="form-head border_bottom m-0 pt-2 pb-2"
+              id="head-Completed"
+            >
+              Completed
+            </div>
+            <div id="area_Completed" name="area-Completed"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="bootstrap.bundle.js"></script>
+    <script src="my.js"></script>
+  </body>
+</html>
